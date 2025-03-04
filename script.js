@@ -6,24 +6,24 @@ let display = () =>{
    console.log('clicked');
    console.log(projectTitle.classList);
     if(projectTitle.classList.contains("opacity-0")){
+        container.classList.add("w-[42vw]")
         project.classList.add("text-xl");
         project.classList.add("font-bold");
         projectTitle.classList.remove("opacity-0");
-        container.classList.add("w-[42vw]")
         projectTitle.classList.remove("max-h-0");
-        projectTitle.classList.add("max-h-100%");
         projectTitle.classList.add("m-5");
         projectTitle.classList.add("mt-0");
         projectTitle.classList.add("opacity-100");
         // sideArrow.classList.remove("-rotate-90");
         sideArrow.classList.add("-rotate-90");
+        projectTitle.classList.add("max-h-screen");
         
     }
     else{
         // project.classList.remove("text-xl");
         project.classList.remove("font-bold");
         projectTitle.classList.remove("opacity-100");
-        projectTitle.classList.remove("max-h-100%");
+        projectTitle.classList.remove("max-h-screen");
         projectTitle.classList.add("max-h-0");
         projectTitle.classList.add("opacity-0");
         container.classList.remove("w-[42vw]") 
